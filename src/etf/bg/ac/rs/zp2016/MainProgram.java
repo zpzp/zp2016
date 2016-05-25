@@ -33,9 +33,9 @@ public class MainProgram
 		cert.setST("Belgrade");
 		cert.setC("Serbia");
 		cert.setE("aida.mavric@gmail.com");
-		ArrayList<String> alternatives = new ArrayList<String>();
-		alternatives.add("DNS=23232323");
-		cert.setAltNames(alternatives);
+		/*ArrayList<String> alternatives = new ArrayList<String>();
+		alternatives.add("DNS names=nesto.com");
+		cert.setAltNames(alternatives);*/
 		
 		/*CN: CommonName
 			OU: OrganizationalUnit

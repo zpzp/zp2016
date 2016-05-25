@@ -82,18 +82,16 @@ public class CertificateClass
 		    ext.set(AuthorityKeyIdentifierExtension.NAME,
 		            new AuthorityKeyIdentifierExtension(new KeyIdentifier(pair.getPublic()), null, null));*/
 
-		   // byte[] b = "aaa".getBytes();
-		 // try {
-		 // DerValue d = new DerValue("KURAC");
-		  GeneralNames g = new GeneralNames();
+		 /* GeneralNames g = new GeneralNames();
 		  GeneralName gr= new GeneralName(new X500Name(altNames.get(0)));
 		  g.add(gr);
 		    
 		    ext.set(SubjectAlternativeNameExtension.NAME, new SubjectAlternativeNameExtension(true,g));
        
-		 // }catch(IOException e){}
+	
 		 
-		    info.set(X509CertInfo.EXTENSIONS, ext);
+		    info.set(X509CertInfo.EXTENSIONS, ext);*/
+		  
 		  // Sign the certificate to identify the algorithm that's used.
 		  X509CertImpl certificate = new X509CertImpl(info);
 		  
